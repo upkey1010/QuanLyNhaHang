@@ -28,5 +28,11 @@ namespace BaitapRestaurent.DAL
             var s = db.LoaiMonan.Select(p => p).ToList();
             return s;
         }
+
+        public LoaiMonan FindIDbyName(string name)
+        {
+            var s = db.LoaiMonan.Single(p => p.TenLoaimonan == name);
+            return s;
+        }
     }
 }

@@ -22,5 +22,10 @@ namespace BaitapRestaurent.BLL
             return dal.getListtoShow();
         }
 
+        public LoaiMonan FindIDbyName(string name)
+        {
+            return dal.FindIDbyName(name);
+        }
+
     }
 }

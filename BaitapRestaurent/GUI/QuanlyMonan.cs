@@ -15,11 +15,14 @@ namespace BaitapRestaurent.GUI
     public partial class QuanlyMonan : Form
     {
         LoaiMonan_BLL cate_bll;
+        Monan_BLL monan_bll;
         public QuanlyMonan()
         {
             InitializeComponent();
             cate_bll = new LoaiMonan_BLL();
+            monan_bll = new Monan_BLL();
             loadDgvLoaiMonan();
+            loadDgvMonan();
         }
 
         private void loadDgvLoaiMonan()
@@ -30,7 +33,8 @@ namespace BaitapRestaurent.GUI
 
         private void loadDgvMonan()
         {
-
+            List<Monan> list = monan_bll.getList();
+            dgv_Monan.DataSource = list.Select(p => new { MaLoai = p.Monan_ID, TenMonan = p.TenMonan, Giatien = p.Giatien}).ToList();
         }
 
         private LoaiMonan getinfoLoaiMonan()
@@ -43,6 +47,7 @@ namespace BaitapRestaurent.GUI
         private void button6_Click(object sender, EventArgs e)
         {
             AddMonan addmonan = new AddMonan();
+            addmonan.update = new AddMonan.UpdateGridview(loadDgvMonan);
             addmonan.Show();
         }
 

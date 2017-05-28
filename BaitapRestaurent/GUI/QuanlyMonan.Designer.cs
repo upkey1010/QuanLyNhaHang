@@ -62,15 +62,15 @@
             this.dgv_LoaiMonan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_LoaiMonan.Location = new System.Drawing.Point(12, 40);
             this.dgv_LoaiMonan.Name = "dgv_LoaiMonan";
-            this.dgv_LoaiMonan.Size = new System.Drawing.Size(232, 245);
+            this.dgv_LoaiMonan.Size = new System.Drawing.Size(255, 245);
             this.dgv_LoaiMonan.TabIndex = 0;
             // 
             // dgv_Monan
             // 
             this.dgv_Monan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Monan.Location = new System.Drawing.Point(261, 40);
+            this.dgv_Monan.Location = new System.Drawing.Point(273, 40);
             this.dgv_Monan.Name = "dgv_Monan";
-            this.dgv_Monan.Size = new System.Drawing.Size(232, 245);
+            this.dgv_Monan.Size = new System.Drawing.Size(499, 245);
             this.dgv_Monan.TabIndex = 2;
             // 
             // but_delcate
@@ -84,7 +84,7 @@
             // 
             // but_updatecate
             // 
-            this.but_updatecate.Location = new System.Drawing.Point(168, 378);
+            this.but_updatecate.Location = new System.Drawing.Point(178, 378);
             this.but_updatecate.Name = "but_updatecate";
             this.but_updatecate.Size = new System.Drawing.Size(75, 23);
             this.but_updatecate.TabIndex = 5;
@@ -93,7 +93,7 @@
             // 
             // txt_QLMA_TenLoaiEdit
             // 
-            this.txt_QLMA_TenLoaiEdit.Location = new System.Drawing.Point(12, 378);
+            this.txt_QLMA_TenLoaiEdit.Location = new System.Drawing.Point(22, 378);
             this.txt_QLMA_TenLoaiEdit.Name = "txt_QLMA_TenLoaiEdit";
             this.txt_QLMA_TenLoaiEdit.Size = new System.Drawing.Size(149, 20);
             this.txt_QLMA_TenLoaiEdit.TabIndex = 6;
@@ -116,7 +116,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(416, 294);
+            this.button5.Location = new System.Drawing.Point(580, 294);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 8;
@@ -125,7 +125,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(261, 294);
+            this.button6.Location = new System.Drawing.Point(425, 294);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(149, 23);
             this.button6.TabIndex = 7;
@@ -135,21 +135,21 @@
             // 
             // txt_QLMA_searchMA
             // 
-            this.txt_QLMA_searchMA.Location = new System.Drawing.Point(267, 447);
+            this.txt_QLMA_searchMA.Location = new System.Drawing.Point(431, 447);
             this.txt_QLMA_searchMA.Name = "txt_QLMA_searchMA";
             this.txt_QLMA_searchMA.Size = new System.Drawing.Size(149, 20);
             this.txt_QLMA_searchMA.TabIndex = 12;
             // 
             // txt_QLMA_searchCate
             // 
-            this.txt_QLMA_searchCate.Location = new System.Drawing.Point(12, 407);
+            this.txt_QLMA_searchCate.Location = new System.Drawing.Point(22, 407);
             this.txt_QLMA_searchCate.Name = "txt_QLMA_searchCate";
             this.txt_QLMA_searchCate.Size = new System.Drawing.Size(149, 20);
             this.txt_QLMA_searchCate.TabIndex = 13;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(422, 447);
+            this.button7.Location = new System.Drawing.Point(586, 447);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(69, 23);
             this.button7.TabIndex = 14;
@@ -158,7 +158,7 @@
             // 
             // but_searchCate
             // 
-            this.but_searchCate.Location = new System.Drawing.Point(169, 405);
+            this.but_searchCate.Location = new System.Drawing.Point(179, 405);
             this.but_searchCate.Name = "but_searchCate";
             this.but_searchCate.Size = new System.Drawing.Size(75, 23);
             this.but_searchCate.TabIndex = 15;
@@ -184,7 +184,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(355, 9);
+            this.label2.Location = new System.Drawing.Point(505, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 18;
@@ -212,7 +212,7 @@
             this.groupBox1.Controls.Add(this.txt_QLMA_TenLoaiAdd);
             this.groupBox1.Controls.Add(this.but_addcate);
             this.groupBox1.Controls.Add(this.but_delcate);
-            this.groupBox1.Location = new System.Drawing.Point(12, 294);
+            this.groupBox1.Location = new System.Drawing.Point(22, 294);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(231, 75);
             this.groupBox1.TabIndex = 20;
@@ -236,7 +236,7 @@
             this.groupBox2.Controls.Add(this.txt_QLMA_tenMA);
             this.groupBox2.Controls.Add(this.txt_QLMA_price);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Location = new System.Drawing.Point(261, 327);
+            this.groupBox2.Location = new System.Drawing.Point(425, 327);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(230, 101);
             this.groupBox2.TabIndex = 21;
@@ -253,7 +253,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(94, 447);
+            this.button1.Location = new System.Drawing.Point(104, 447);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 22;
@@ -265,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 483);
+            this.ClientSize = new System.Drawing.Size(780, 480);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

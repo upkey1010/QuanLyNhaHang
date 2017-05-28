@@ -19,3 +19,5 @@ C:\Users\guest1\documents\visual studio 2015\Projects\BaitapRestaurent\BaitapRes
 C:\Users\guest1\documents\visual studio 2015\Projects\BaitapRestaurent\BaitapRestaurent\obj\Debug\BaitapRestaurent.Migrations.update2.resources
 C:\Users\guest1\documents\visual studio 2015\Projects\BaitapRestaurent\BaitapRestaurent\obj\Debug\BaitapRestaurent.GUI.QuanlyMonan.resources
 C:\Users\guest1\documents\visual studio 2015\Projects\BaitapRestaurent\BaitapRestaurent\obj\Debug\BaitapRestaurent.GUI.AddMonan.resources
+C:\Users\guest1\documents\visual studio 2015\Projects\BaitapRestaurent\BaitapRestaurent\obj\Debug\BaitapRestaurent.Migrations.update_KhoaphuMonan.resources
+C:\Users\guest1\documents\visual studio 2015\Projects\BaitapRestaurent\BaitapRestaurent\obj\Debug\BaitapRestaurent.Migrations.update_KhoaphuMonan2.resources

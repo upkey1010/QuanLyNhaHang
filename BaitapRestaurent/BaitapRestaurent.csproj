@@ -113,6 +113,14 @@
     <Compile Include="Migrations\201705270839126_update2.Designer.cs">
       <DependentUpon>201705270839126_update2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705281713582_update_KhoaphuMonan.cs" />
+    <Compile Include="Migrations\201705281713582_update_KhoaphuMonan.Designer.cs">
+      <DependentUpon>201705281713582_update_KhoaphuMonan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705281720419_update_KhoaphuMonan2.cs" />
+    <Compile Include="Migrations\201705281720419_update_KhoaphuMonan2.Designer.cs">
+      <DependentUpon>201705281720419_update_KhoaphuMonan2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="Model\Banan.cs" />
@@ -149,6 +157,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705270839126_update2.resx">
       <DependentUpon>201705270839126_update2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281713582_update_KhoaphuMonan.resx">
+      <DependentUpon>201705281713582_update_KhoaphuMonan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281720419_update_KhoaphuMonan2.resx">
+      <DependentUpon>201705281720419_update_KhoaphuMonan2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
