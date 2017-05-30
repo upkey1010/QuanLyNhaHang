@@ -48,7 +48,9 @@ namespace BaitapRestaurent.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txt_code.Text == "NV2017")
+            bool register_success = false;
+            
+            if (txt_code.Text == "NV2017")
             {
                 if (nv_bll.checkTenDangnhap(getInfoNVtoAdd().TenDangNhap) != 0)
                 {
@@ -57,14 +59,29 @@ namespace BaitapRestaurent.GUI
                 else
                 {
                     nv_bll.AddNVtoDB(getInfoNVtoAdd());
-                    update.Invoke();
-                    this.Close();
+                    register_success = true;
                 }
             }
             else
             {
                 MessageBox.Show("Chua nhap Code hoac Code khong dung !");
             }
+            
+            if (register_success == true)
+            {
+                if (DangnhapForm.checkPlace == false)
+                {
+                    this.Close();
+                    DangnhapForm a = new DangnhapForm();
+                    a.Show();
+                }
+                else
+                {
+                    update.Invoke();
+                    this.Close();
+                }
+            }
+            
             
         }
 

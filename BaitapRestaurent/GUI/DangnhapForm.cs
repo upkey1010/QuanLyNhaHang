@@ -17,6 +17,7 @@ namespace BaitapRestaurent.GUI
         Nhanvien_BLL nv_bll;
         public static string NV_ID_login;
         public static Nhanvien NhanvienLoggedin;
+        public static bool checkPlace = false;
         public DangnhapForm()
         {
             InitializeComponent();
@@ -57,6 +58,7 @@ namespace BaitapRestaurent.GUI
         {
             AddNV a = new AddNV();
             a.Show();
+            this.Hide();
         }
     }
 }

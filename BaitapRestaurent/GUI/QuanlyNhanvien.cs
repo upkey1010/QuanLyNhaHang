@@ -20,6 +20,7 @@ namespace BaitapRestaurent.GUI
             InitializeComponent();
             nv_bll = new Nhanvien_BLL();
             loadDatagridviewNV();
+            DangnhapForm.checkPlace = true;
         }
 
         public void loadDatagridviewNV()

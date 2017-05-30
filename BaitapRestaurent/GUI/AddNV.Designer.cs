@@ -156,6 +156,7 @@
             // 
             this.txt_addNV_Matkhau.Location = new System.Drawing.Point(334, 70);
             this.txt_addNV_Matkhau.Name = "txt_addNV_Matkhau";
+            this.txt_addNV_Matkhau.PasswordChar = '*';
             this.txt_addNV_Matkhau.Size = new System.Drawing.Size(132, 20);
             this.txt_addNV_Matkhau.TabIndex = 28;
             // 
