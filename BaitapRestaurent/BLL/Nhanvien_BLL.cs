@@ -35,6 +35,10 @@ namespace BaitapRestaurent.BLL
         {
             return dal.checkNhanvienLogin(user, password);
         }
+        public Nhanvien FindIDbyUser(string name)
+        {
+            return dal.FindIDbyUser(name);
+        }
 
     }
 }

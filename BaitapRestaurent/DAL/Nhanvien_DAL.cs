@@ -36,5 +36,11 @@ namespace BaitapRestaurent.DAL
         {
             return db.Nhanvien.Where(p => p.TenDangNhap == user && p.Matkhau == password).Count();
         }
+
+        public Nhanvien FindIDbyUser(string name)
+        {
+            var s = db.Nhanvien.Single(p => p.TenDangNhap == name);
+            return s;
+        }
     }
 }

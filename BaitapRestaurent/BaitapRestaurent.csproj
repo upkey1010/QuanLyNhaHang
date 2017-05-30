@@ -58,13 +58,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Banan_BLL.cs" />
+    <Compile Include="BLL\ChitietDonhang_BLL.cs" />
+    <Compile Include="BLL\Donhang_BLL.cs" />
     <Compile Include="BLL\LoaiMonan_BLL.cs" />
     <Compile Include="BLL\Monan_BLL.cs" />
     <Compile Include="BLL\Nhanvien_BLL.cs" />
     <Compile Include="DAL\Banan_DAL.cs" />
+    <Compile Include="DAL\ChitietDonhang_DAL.cs" />
+    <Compile Include="DAL\Donhang_DAL.cs" />
     <Compile Include="DAL\LoaiMonan_DAL.cs" />
     <Compile Include="DAL\Monan_DAL.cs" />
     <Compile Include="DAL\Nhanvien_DAL.cs" />
+    <Compile Include="GUI\AddMAtoTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddMAtoTable.Designer.cs">
+      <DependentUpon>AddMAtoTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\AddMonan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +86,12 @@
     </Compile>
     <Compile Include="GUI\AddNV.Designer.cs">
       <DependentUpon>AddNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\confirmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\confirmPayment.Designer.cs">
+      <DependentUpon>confirmPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangnhapForm.cs">
       <SubType>Form</SubType>
@@ -131,11 +147,17 @@
     <Compile Include="Model\Nhanvien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AddMAtoTable.resx">
+      <DependentUpon>AddMAtoTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\AddMonan.resx">
       <DependentUpon>AddMonan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\AddNV.resx">
       <DependentUpon>AddNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\confirmPayment.resx">
+      <DependentUpon>confirmPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangnhapForm.resx">
       <DependentUpon>DangnhapForm.cs</DependentUpon>

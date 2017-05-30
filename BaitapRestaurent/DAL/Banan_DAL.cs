@@ -35,5 +35,33 @@ namespace BaitapRestaurent.DAL
             var s = db.Banan.Select(p => p).ToList();
             return s;
         }
+
+        public Banan FindIDbyName(string name)
+        {
+            var s = db.Banan.Single(p => p.TenBanan == name);
+            return s;
+        }
+
+        public void updateBA(Banan banan)
+        {
+            var s = db.Banan.Single(p => p.Banan_ID == banan.Banan_ID);
+            s.TenBanan = banan.TenBanan;
+            s.Tinhtrang = banan.Tinhtrang;
+            db.SaveChanges();
+        }
+        public void DelBanan(Banan banan)
+        {
+            var s = db.Banan.Single(p => p.Banan_ID == banan.Banan_ID);
+            db.Banan.Remove(s);
+            db.SaveChanges();
+        }
+
+        public void DoiTinhtrangBanan(Banan banan)
+        {
+            var s = db.Banan.Single(p => p.Banan_ID == banan.Banan_ID);
+            s.Tinhtrang = false;
+            db.SaveChanges();
+        }
+
     }
 }

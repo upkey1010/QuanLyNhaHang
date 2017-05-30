@@ -13,7 +13,7 @@ namespace BaitapRestaurent.DAL
         Model1 db = new Model1();
         public string Generate_MonanID()
         {
-            return "LMA" + (db.Monan.Count() + 1).ToString();
+            return "MA" + (db.Monan.Count() + 1).ToString();
         }
 
         public void AddMAtoDB(Monan monan)

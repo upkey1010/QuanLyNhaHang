@@ -48,16 +48,24 @@ namespace BaitapRestaurent.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (nv_bll.checkTenDangnhap(getInfoNVtoAdd().TenDangNhap)!=0)
+            if(txt_code.Text == "NV2017")
             {
-                Error_mess.Show();
+                if (nv_bll.checkTenDangnhap(getInfoNVtoAdd().TenDangNhap) != 0)
+                {
+                    Error_mess.Show();
+                }
+                else
+                {
+                    nv_bll.AddNVtoDB(getInfoNVtoAdd());
+                    update.Invoke();
+                    this.Close();
+                }
             }
             else
             {
-                nv_bll.AddNVtoDB(getInfoNVtoAdd());
-                update.Invoke();
-                this.Close();
+                MessageBox.Show("Chua nhap Code hoac Code khong dung !");
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

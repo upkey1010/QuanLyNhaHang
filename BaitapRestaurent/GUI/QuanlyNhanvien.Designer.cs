@@ -45,8 +45,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dateTimePicker_NV = new System.Windows.Forms.DateTimePicker();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txt_NV_search = new System.Windows.Forms.TextBox();
             this.button_NV_back = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -208,22 +206,6 @@
             this.dateTimePicker_NV.Size = new System.Drawing.Size(132, 20);
             this.dateTimePicker_NV.TabIndex = 17;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(133, 356);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Tìm kiếm";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // txt_NV_search
-            // 
-            this.txt_NV_search.Location = new System.Drawing.Point(219, 359);
-            this.txt_NV_search.Name = "txt_NV_search";
-            this.txt_NV_search.Size = new System.Drawing.Size(132, 20);
-            this.txt_NV_search.TabIndex = 19;
-            // 
             // button_NV_back
             // 
             this.button_NV_back.Location = new System.Drawing.Point(42, 356);
@@ -269,8 +251,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button_NV_back);
-            this.Controls.Add(this.txt_NV_search);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.dateTimePicker_NV);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label5);
@@ -315,8 +295,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker_NV;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox txt_NV_search;
         private System.Windows.Forms.Button button_NV_back;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

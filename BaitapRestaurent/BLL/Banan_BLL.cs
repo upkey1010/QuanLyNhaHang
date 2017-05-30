@@ -19,5 +19,23 @@ namespace BaitapRestaurent.BLL
         {
             return dal.getListBAtoShow();
         }
+        public Banan FindIDbyName(string name)
+        {
+            return dal.FindIDbyName(name);
+        }
+        public void updateBA(Banan banan)
+        {
+            dal.updateBA(banan);
+        }
+        public void DoiTinhtrangBanan(Banan banan)
+        {
+            dal.DoiTinhtrangBanan(banan);
+        }
+        public void DelBanan(Banan banan)
+        {
+            dal.DelBanan(banan);
+        }
+
+
     }
 }

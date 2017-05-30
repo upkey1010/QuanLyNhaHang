@@ -30,10 +30,11 @@
         {
             this.dgv_main = new System.Windows.Forms.DataGridView();
             this.main_add = new System.Windows.Forms.Button();
-            this.main_del = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_main_goimon = new System.Windows.Forms.Button();
             this.button_main_QLNV = new System.Windows.Forms.Button();
             this.button_main_QLMA = new System.Windows.Forms.Button();
+            this.test = new System.Windows.Forms.Label();
+            this.test2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_main)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,34 +45,27 @@
             this.dgv_main.Name = "dgv_main";
             this.dgv_main.Size = new System.Drawing.Size(452, 236);
             this.dgv_main.TabIndex = 0;
+            this.dgv_main.SelectionChanged += new System.EventHandler(this.dgv_main_SelectionChanged);
             // 
             // main_add
             // 
             this.main_add.Location = new System.Drawing.Point(24, 269);
             this.main_add.Name = "main_add";
-            this.main_add.Size = new System.Drawing.Size(75, 23);
+            this.main_add.Size = new System.Drawing.Size(156, 23);
             this.main_add.TabIndex = 1;
             this.main_add.Text = "Thêm bàn";
             this.main_add.UseVisualStyleBackColor = true;
             this.main_add.Click += new System.EventHandler(this.main_add_Click);
             // 
-            // main_del
+            // button_main_goimon
             // 
-            this.main_del.Location = new System.Drawing.Point(105, 269);
-            this.main_del.Name = "main_del";
-            this.main_del.Size = new System.Drawing.Size(75, 23);
-            this.main_del.TabIndex = 2;
-            this.main_del.Text = "Xóa bàn";
-            this.main_del.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(186, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_main_goimon.Location = new System.Drawing.Point(186, 269);
+            this.button_main_goimon.Name = "button_main_goimon";
+            this.button_main_goimon.Size = new System.Drawing.Size(148, 81);
+            this.button_main_goimon.TabIndex = 3;
+            this.button_main_goimon.Text = "Gọi Món";
+            this.button_main_goimon.UseVisualStyleBackColor = true;
+            this.button_main_goimon.Click += new System.EventHandler(this.button_main_goimon_Click);
             // 
             // button_main_QLNV
             // 
@@ -93,21 +87,41 @@
             this.button_main_QLMA.UseVisualStyleBackColor = true;
             this.button_main_QLMA.Click += new System.EventHandler(this.button_main_QLMA_Click);
             // 
+            // test
+            // 
+            this.test.AutoSize = true;
+            this.test.Location = new System.Drawing.Point(357, 275);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(35, 13);
+            this.test.TabIndex = 6;
+            this.test.Text = "label1";
+            // 
+            // test2
+            // 
+            this.test2.AutoSize = true;
+            this.test2.Location = new System.Drawing.Point(357, 303);
+            this.test2.Name = "test2";
+            this.test2.Size = new System.Drawing.Size(35, 13);
+            this.test2.TabIndex = 7;
+            this.test2.Text = "label1";
+            // 
             // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 405);
+            this.Controls.Add(this.test2);
+            this.Controls.Add(this.test);
             this.Controls.Add(this.button_main_QLMA);
             this.Controls.Add(this.button_main_QLNV);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.main_del);
+            this.Controls.Add(this.button_main_goimon);
             this.Controls.Add(this.main_add);
             this.Controls.Add(this.dgv_main);
             this.Name = "Mainform";
             this.Text = "Mainform";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_main)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -115,9 +129,10 @@
 
         private System.Windows.Forms.DataGridView dgv_main;
         private System.Windows.Forms.Button main_add;
-        private System.Windows.Forms.Button main_del;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_main_goimon;
         private System.Windows.Forms.Button button_main_QLNV;
         private System.Windows.Forms.Button button_main_QLMA;
+        private System.Windows.Forms.Label test;
+        private System.Windows.Forms.Label test2;
     }
 }
